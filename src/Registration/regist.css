@@ -1,0 +1,185 @@
+.wrapper {
+  width: 85%;
+  margin: 2.5rem;
+  height: 100%;
+  border-radius: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(-50%, 50%);
+  box-shadow: 8px 3px 8px 8px whitesmoke;
+  overflow: hidden;
+}
+p {
+  margin-top: -0.5rem;
+  color: red;
+  font-size: 12px;
+}
+.img_section {
+  margin-top: 2rem;
+  margin-bottom: 4.5rem;
+}
+.img_section img {
+  margin-left: 0.5rem;
+  width: 95%;
+  height: 100%;
+  box-shadow: 1px 2px 2px 2px rgb(56, 197, 236);
+  border-radius: 2%;
+}
+form {
+  margin-left: 3rem;
+}
+
+.input-container {
+  position: relative;
+  margin-bottom: 1.2rem;
+}
+.input-field {
+  display: block;
+  width: 70%;
+  padding: 10px;
+  font-size: 15px;
+  border: none;
+  border-bottom: 2px solid #ccc;
+  outline: none;
+  background-color: transparent;
+}
+
+.input-label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: rgb(110, 88, 88) (0, 128, 255);
+  pointer-events: none;
+  transition: all 0.3s ease;
+  text-shadow: 2px 4px 3px solid green;
+}
+
+.input-highlight {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background-color: #00da12;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus + .input-label {
+  top: -20px;
+  font-size: 12px;
+  color: #10221f;
+}
+
+.input-field:focus + .input-label + .input-highlight {
+  width: 70%;
+}
+.dropdown-menu {
+  background-color: aliceblue;
+}
+.btn {
+  background-color: rgb(9, 143, 245);
+}
+.btn:hover {
+  background-color: rgb(30, 86, 119);
+}
+.radio {
+  margin-right: 1rem;
+}
+.Icon {
+  position: absolute;
+  top: 0.7rem;
+  right: 10rem;
+}
+/* to Hide predefined Behavior of show/Hide password   */
+input[type='password']::-webkit-text-security-disclosure-button {
+  display: none;
+}
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .Icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 5rem;
+  }
+}
+@media screen and (min-width: 991px) and (max-width: 1200px) {
+  .Icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 7rem;
+  }
+}
+@media screen and (max-width: 450px) {
+  .form-check {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .form-check-label {
+    padding-left: 0.878rem;
+  }
+  .input-field {
+    padding: 9px;
+    font-size: 10px;
+  }
+  .Icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 3.2rem;
+  }
+  @media screen and (max-width: 389px) {
+    .wrapper {
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+    .labelSelect {
+      font-size: 13px;
+    }
+    .select1 {
+      margin-top: 2rem;
+      outline: 10px red;
+      border: 0;
+      box-shadow: none;
+      padding: 0.5rem 0.3rem;
+      color: rgb(91, 80, 80);
+      background-image: linear-gradient(rgb(98, 154, 192), white);
+      cursor: pointer;
+    }
+
+    .select1::after {
+      content: '\25BC';
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding: 1em;
+      background-color: #34495e;
+      transition: 0.25s all ease;
+      pointer-events: none;
+    }
+    .SignInbtn {
+      font-size: 18px;
+      background: transparent;
+      border: none;
+      padding: 0.2rem 0.2em;
+      color: #12d7fe;
+      border-radius: 0.6px;
+      position: relative;
+      transition: 0.5s ease;
+    }
+    .img_sectionn {
+      margin-left: 1rem;
+    }
+    .img_sectionn h6 {
+      font-size: 14px;
+    }
+  }
+}
+@media screen and (min-width: 451px) and (max-width: 602px) {
+  .Icon {
+    position: absolute;
+    top: 0.7rem;
+    right: 6rem;
+  }
+}
